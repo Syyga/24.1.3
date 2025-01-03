@@ -1,11 +1,8 @@
-import React, { useState } from "react";
 import "./Xp.css";
 
-function Xp() {
-  const [Exp, setExp] = useState(0);
-
+function Xp({ Exp, setExp }) {
   const addExp = (i) => {
-    setExp((prev) => Math.max(Math.min(prev + i, 100), 0));
+    setExp((prev) => Math.min(Math.max(prev + i, 0), 100));
   };
 
   return (

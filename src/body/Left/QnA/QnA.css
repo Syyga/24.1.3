@@ -1,8 +1,12 @@
 .qna {
-    border: 1px solid #d5d5d9;
-    border-radius: 12px;
-    padding: 17px 18px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+  border: 1px solid #d5d5d9;
+  border-radius: 12px;
+  padding: 17px 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.currnt-qna {
+  color: #5f52ff;
 }
