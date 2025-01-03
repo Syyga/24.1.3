@@ -13,7 +13,7 @@ function Main() {
             <LeftContainer Exp={Exp} setExp={setExp} />
           </div>
           <div>
-            <CheckMission />
+            <CheckMission Exp={Exp} setExp={setExp} />
           </div>
         </div>
       </div>

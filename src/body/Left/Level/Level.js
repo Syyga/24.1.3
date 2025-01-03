@@ -42,15 +42,15 @@ function Level({ Exp }) {
     else if (Exp > 0)
       setLevel({
         num: 1,
-        content: "미션해라~",
+        content: "미션하자~",
         text: "아기",
         img: level1,
       });
     else
       setLevel({
         num: 0,
-        content: "미션안해?",
-        text: "태초",
+        content: "잘못슴다?",
+        text: "이병",
         img: level0,
       });
   }, [Exp]);

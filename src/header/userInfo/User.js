@@ -5,7 +5,9 @@ function User() {
   return (
     <>
       <div className="user">
-        <div className="user-info">{userinfo}님</div>
+        <div className="user-info">
+          <span>{userinfo}</span>님
+        </div>
         <div>
           <div className="login-button">로그인</div>
         </div>

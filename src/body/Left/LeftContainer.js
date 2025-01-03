@@ -10,7 +10,7 @@ function LeftContainer({ Exp, setExp }) {
       <div className="leftcontainer">
         <Level Exp={Exp} />
         <Xp Exp={Exp} setExp={setExp} />
-        <QnA />
+        <QnA setExp={setExp} />
       </div>
     </>
   );

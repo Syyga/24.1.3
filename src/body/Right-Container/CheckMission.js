@@ -3,12 +3,28 @@ import "./CheckMission.css";
 import checkbox from "../../assets/checkbox.png";
 import X from "../../assets/Vector.png";
 
-function CheckMission() {
+function CheckMission({ Exp, setExp }) {
   const [missions, setMissions] = useState([false, false, false, false]);
+
+  const addExp = (i) => {
+    setExp((prev) => Math.min(Math.max(prev + i, 0), 100));
+  };
 
   const toggleMission = (index) => {
     setMissions((prevMissions) =>
-      prevMissions.map((mission, i) => (i === index ? !mission : mission))
+      prevMissions.map((mission, i) => {
+        if (i === index) {
+          const newMissionState = !mission;
+          if (newMissionState) {
+            addExp(10);
+            return !mission;
+          } else {
+            addExp(-10);
+          }
+        } else {
+          return mission;
+        }
+      })
     );
   };
 
