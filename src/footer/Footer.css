@@ -1,0 +1,18 @@
+.tail {
+  display: flex;
+  justify-content: center;
+}
+
+.tail-container {
+  display: flex;
+  justify-content: space-between;
+  width: 453px;
+}
+
+.tail-text {
+  padding: 8px 16px;
+  border: 0px solid;
+  background-color: #f7f7f8;
+  border-radius: 70px;
+  color: #82828d;
+}

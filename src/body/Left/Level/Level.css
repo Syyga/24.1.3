@@ -1,0 +1,21 @@
+.do-mission {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 81px;
+  margin-bottom: 18px;
+}
+
+.level-image {
+  align-items: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.level-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}

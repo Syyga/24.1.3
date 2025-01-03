@@ -1,0 +1,12 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    height: 610px;
+    margin-bottom: 108px;
+    margin-top: 60px;
+}
+
+.container{
+    display: flex;
+    width: 1080px;
+}
