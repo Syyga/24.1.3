@@ -17,7 +17,7 @@ function CheckMission() {
       <div>
         <p className="p-text">오늘의 미션을 수행하고 포인트를 얻어보세요!</p>
         <div className="gridContainer">
-          <div className="grid-item1">
+          <div className={missions[0] ? "grid-item1" : "grid-item2"}>
             <img
               className="check"
               src={missions[0] ? checkbox : X}
@@ -29,7 +29,7 @@ function CheckMission() {
               {missions[0] ? "+10 P 확득!" : "아직 안했어요"}
             </div>
           </div>
-          <div className="grid-item2">
+          <div className={missions[1] ? "grid-item1" : "grid-item2"}>
             <img
               className="check"
               src={missions[1] ? checkbox : X}
@@ -41,7 +41,7 @@ function CheckMission() {
               {missions[1] ? "+10 P 확득!" : "아직 안했어요"}
             </div>
           </div>
-          <div className="grid-item2">
+          <div className={missions[2] ? "grid-item1" : "grid-item2"}>
             <img
               className="check"
               src={missions[2] ? checkbox : X}
@@ -53,7 +53,7 @@ function CheckMission() {
               {missions[2] ? "+10 P 확득!" : "아직 안했어요"}
             </div>
           </div>
-          <div className="grid-item1">
+          <div className={missions[3] ? "grid-item1" : "grid-item2"}>
             <img
               className="check"
               src={missions[3] ? checkbox : X}
